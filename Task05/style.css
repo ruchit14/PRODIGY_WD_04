@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    color: #19647e;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url(Images/bg.avif);
+    background-repeat: repeat;
+}
+
+
+.search-container{
+    width: 25vw;
+    height: 15vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-container input{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    padding-inline: 10px;
+    margin-inline: 1vw;
+    text-transform: capitalize;
+}
+
+.search-container input::placeholder{
+    font-weight: 500;
+}
+
+.search-container img{
+    height: 5vh;
+    cursor: pointer;
+}
+
+
+.weather-display-container{
+    width: 50vw;
+    height: 75vh;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.search-container, .weather-display-container{
+    background-color: #cdcdcd;
+    box-shadow: 3px 3px 3px 3px #342E37;
+    border: 3px solid #313638;
+}
+.weather-display-container.inactive{
+    display: none;
+}
+
+.weather-display-container .city-name{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.weather-display-container #current-temp{
+    grid-column: 1/4;
+    grid-row: 2/3;   
+}
+
+#current-temp img{
+    width: 100px;
+}
+
+.weather-display-container #humidity{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.weather-display-container #wind{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.weather-display-container #feels-like{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.weather-display-container #precipitation{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.weather-display-container #uv-index{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.weather-display-container #visibility{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.city-name, #current-temp, #humidity, #wind, #feels-like, #precipitation, #uv-index, #visibility{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.city-name img, #humidity img, #wind img, #feels-like img, #precipitation img, #uv-index img, #visibility img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="2player.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="left active" id="left-text">
+                <h3>Player 1</h3>
+                <h1>X</h1>
+            </div>
+            <div class="right" id="right-text">
+                <h3>Player 2</h3>
+                <h1>O</h1>
+            </div>
+        </div>
+        <div class="game-space">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <div id="win-modal">
+        <div class="text">
+            <h1 id="modal-text">Wins</h1>
+        </div>
+        <div class="buttons">
+            <a href="index.html">Home</a>
+            <a href="2player.html">Restart</a>
+        </div>
+    </div>
+
+    <div id="draw-modal">
+        <div class="text">
+            <h1 id="modal-text">Draw</h1>
+        </div>
+        <div class="buttons">
+            <a href="index.html">Home</a>
+            <a href="1player.html">Restart</a>
+        </div>
+    </div>
+
+    <script src="2p.js"></script>
+</body>
+</html>

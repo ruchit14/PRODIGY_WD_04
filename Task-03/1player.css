@@ -1,0 +1,119 @@
+.container{
+    background-color: rgb(142, 14, 192);
+    border-radius: 20px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid white;
+}
+
+.top{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.left.active{
+    color: white;
+}
+
+.right.active{
+    color: white;
+}
+
+
+.game-space{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    font-size: 70px;
+    color: rgb(142, 14, 192);
+}
+
+
+#win-modal{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 14, 192);
+
+    padding: 100px 200px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+#win-modal h1{
+    margin-bottom: 50px;
+    color: white;
+}
+
+#win-modal a{
+    text-decoration: none;
+    color: rgb(142, 14, 192);
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: larger;
+    border: 2px solid white;
+}
+
+#win-modal a:hover{
+    background-color: rgb(142, 14, 192);
+    color: white;
+    border: 2px solid white;
+}
+
+#draw-modal{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 14, 192);
+
+    padding: 100px 200px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+#draw-modal h1{
+    margin-bottom: 50px;
+    color: white;
+}
+
+#draw-modal a{
+    text-decoration: none;
+    color: rgb(142, 14, 192);
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: larger;
+    border: 2px solid white;
+}
+
+#draw-modal a:hover{
+    background-color: rgb(142, 14, 192);
+    color: white;
+    border: 2px solid white;
+}

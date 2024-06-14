@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p class="nav-name"><a href="#main-sec">RUCHIT AHUJA</a></p>
+
+        <ul>
+            <li><a href="#about-me-sec">About Me</a></li>
+            <li><a href="#my-work-sec">My Work</a></li>
+            <li><a href="#contact-me-sec">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-section" id="main-sec">
+        <p class="top-text">Hey There</p><p class="imtext">I'm</p>
+        <div class="name-text"><p>Ruchit Ahuja</p></div>
+        <div class="points-text">
+            <div class="first">Student</div>
+            <div class="bullet">&#9900;</div>
+            <div class="second">Tech Enthusiast</div>
+            <div class="bullet">&#9900;</div>
+            <div class="third">Web Dev</div>
+        </div>
+        <!-- <div class="professions">
+            <div class="first">
+                <div>Web Developer</div>
+            </div>
+            <div class="second">
+                <div>App Developer</div>
+            </div>
+            <div class="third">
+                <div>Student</div>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="about-me" id="about-me-sec">
+        <p class="about-me-head" id="about-head">About Me</p>
+        <p class="about-me-descriptions" id="about-desc">I am a student pursuing an Undergraduate Degree in
+             Information Technology at Thakur College of Science and Commerce.<br>
+        I have a keen interest in Web Development, App Development and Game Development. 
+        I have built multiple websites using HTML, CSS and Javascript. I also have experience building
+         Games using Game Engines like Unity</p>
+        <div class="resume-button">
+            <a href="#">Resume</a>
+        </div>
+    </div>
+
+    <div class="my-work" id="my-work-sec">
+        <h1>My Work</h1>
+        <div class="work-container">
+            <div class="box" id="box-1">
+                <img src="Images/stopwatch.png" alt="" class="box-img">
+                <h3 class="box-name">StopWatch Web App</h3>
+            </div>
+            <div class="box" id="box-2">
+                <img src="Images/weatherapp.png" alt="" class="box-img">
+                <h3 class="box-name">Weather Web App</h3>
+            </div>
+            <div class="box" id="box-3">
+                <img src="Images/tictactoe.png" alt="" class="box-img">
+                <h3 class="box-name">Tic Tac Toe</h3>
+            </div>
+
+            <div class="open-box open-box-1">
+                <p class="box-title">StopWatch Web App</p>
+                <img src="Images/stopwatch.png" alt="">
+                <p class="box-description">This is a stopwatch web app made using<br>HTML, CSS and JavaScript</p>
+                <div class="open-box-buttons">
+                    <button class="open-button">Visit</button>
+                    <button class="close-button">Close</button>
+                </div>
+            </div>
+            <div class="open-box open-box-2">
+                <p class="box-title">Weather Web App</p>
+                <img src="Images/weatherapp.png" alt="">
+                <p class="box-description">This is a Weather web app made using<br>HTML, CSS and JavaScript</p>
+                <div class="open-box-buttons">
+                    <button class="open-button">Visit</button>
+                    <button class="close-button">Close</button>
+                </div>
+            </div>
+            <div class="open-box open-box-3">
+                <p class="box-title">Tic Tac Toe</p>
+                <img src="Images/tictactoe.png" alt="">
+                <p class="box-description">This is a Tic Tac Toe Game made using<br>HTML, CSS and JavaScript</p>
+                <div class="open-box-buttons">
+                    <button class="open-button">Visit</button>
+                    <button class="close-button">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact-me" id="contact-me-sec">
+
+        <button id="contact-button">Contact Me</button>
+
+        <div class="form-container" id="form-container">
+            <form action="#" method="post" id="contact-form">
+                <input type="text" name="name" id="" placeholder="Full Name" onblur="this.placeholder='Full Name'" onfocus="this.placeholder=''">
+                <input type="email" name="email" id="" placeholder="Email" onblur="this.placeholder='Email'" onfocus="this.placeholder=''">
+                <input type="tel" name="phone-no" id="" placeholder="Phone Number" onblur="this.placeholder='Phone Number'" onfocus="this.placeholder=''">
+                <input type="text" name="subject" id="" placeholder="Subject" onblur="this.placeholder='Subject'" onfocus="this.placeholder=''">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Get In Touch</p>
+        <div class="links">
+            <a href=""><img src="Images/instagram.png" alt=""></a>
+            <a href=""><img src="Images/linkedin.png" alt=""></a>
+            <a href=""><img src="Images/social-media.png" alt=""></a>
+            <a href=""><img src="Images/twitter.png" alt=""></a>
+            <a href=""><img src="Images/youtube.png" alt=""></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

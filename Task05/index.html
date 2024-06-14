@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <img src="Images/cloudy.png" alt="">
+        <input type="text" name="" id="searchbar" placeholder="Enter a City Name">
+        <img src="Images/search.png" alt="" id="search-button" onclick="search()">
+    </div>
+
+    <div class="weather-display-container inactive">
+        <div class="city-name">
+            <h1 id="city-name-heading">City Name</h1>
+        </div>
+        <div id="current-temp">
+            <img src="Images/cloudy.png" alt="">
+            <h3 id="current-temp-text">Temp C</h3>
+        </div>
+        <div id="humidity">
+            <img src="Images/humidity.png" alt="">
+            <p id="humidity-text"></p> 
+        </div>
+        <div id="wind">
+            <img src="Images/wind.png" alt="">
+            <p id="wind-dir-text">Wind Direction :</p> 
+            <p id="wind-speed-text">Wind Speed :</p> 
+        </div>
+        <div id="feels-like">
+            <img src="Images/feelsLike.png" alt="">
+            <p id="feels-like-text">Feels Like :</p> 
+        </div>
+        <div id="precipitation">
+            <img src="Images/rain.png" alt="">
+            <p id="precipitation-text">10%</p>
+        </div>
+        <div id="uv-index">
+            <img src="Images/uv.png" alt="">
+            <p id="uv-text">UV index : 1</p>
+        </div>
+        <div id="visibility">
+            <img src="Images/visibility.png" alt="">
+            <p id="visibility-text">visibility</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
